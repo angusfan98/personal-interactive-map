@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;700;900&display=swap');
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(245, 2, 2, 0.2);
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#nav_bar{
+  padding:35px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#welcome_box{
+  height:300px;
+  padding:20px;
+  margin:20px;
+}
+
+#welcome_back{
+  color:white;
+  font-family: 'Tajawal', sans-serif;
+  font-size:20px;
+}
+
+
+#h1_id{
+  position:relative;
+  top:50px;
+}
+
+#image_one{
+  display: block;
+  padding:30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid #555;
+}
+
+
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  /* color: #999; */
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #717586;
+  color: #fff;
+  transition: all 0.3s;
+  padding-top: 50px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#sidebar .sidebar-header {
+  padding-top: 40px;
+  padding-bottom:20px; 
+  padding-left:10px;
+  background: rgb(87,97,106);
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  border-radius: 5px; 
+  box-shadow: 10px 10px 5px grey;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  font-size:20px;
+  
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  
+}
+#sidebar ul li a:hover {
+  color:  rgb(87,97,106);
+  background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: rgb(87,97,106);
+  border-radius: 5px; 
+  
+}
+
+#list_of_friends{
+  font-size: 16px;
+  color: black;
+}
+
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #b3b5bd;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#map{
+  padding-left:270px;
+  padding-top:50px;
+}
+
+#box{
+  padding-left:780px;
+  margin-top:-40px;
+}
+
+#placeVisited{
+  padding-top:730px;
+  padding-left:250px;
+  margin: auto;
+  width: 50%;
+}
+
+#list_places_visited{
+  box-shadow: 10px 10px 5px grey;
+}
+
+#delete_button{
+  margin: 1px;
+  font-family: 'Tajawal', sans-serif;
+}
+
+#visited_button{
+  margin: 1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+  font-size:17px;
+}
+
+#not_visited_button{
+  margin: 1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+  font-size:17px;
+}
+
+#no_filter_button{
+  margin:1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+  font-size:17px;
+}
+
+#autocomplete{
+  margin:3px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight:550;
+  border-radius:5px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#addtext_button{
+  margin:1px;
+  font-family: 'Tajawal', sans-serif;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#removetext_button{
+  margin:1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#confirmpin_button{
+  margin:1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#deletepin_button{
+  margin:1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#updatepin_button{
+  margin:1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#desc{
+  margin:3px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight:550;
+}
+
+#title{
+  margin:3px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight:550;
+}
+
+#visited{
+  margin:3px;
+  font-family: 'Tajawal', sans-serif;
+}
+
+#Interested{
+  margin:3px;
+  font-family: 'Tajawal', sans-serif;
+}
+
+#info_box_title{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+#lint_roller_text_nav{
+  font-family: 'Tajawal', sans-serif;
+  font-size:35px;
+}
+
+#friend_form{
+  margin-left:-30px;
+}
+
+#form_title{
+  font-family: 'Tajawal', sans-serif;
+  font-weight:'bold';
+  font-size: 30px;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  padding: 0px;
+}
+
+#carousel{
+  padding-left:250px;
+  padding-top:50px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.carousel {
+  width:1200px;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px grey;
+}
+
+
+#html_friendslist{
+  color: black;
+}
+
+#friends_list_subtitle{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#place_visited_title{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 25px;
+  color:white;
+  padding-left: 280px;
+  background: rgb(87,97,106);
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+}
+
+#place_visited_title_two{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 25px;
+  color:white;
+  padding-left: 280px;
+  background: rgb(87,97,106);
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+}
+
+#place_visited_title_three{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 25px;
+  color:white;
+  padding-left: 250px;
+  background: rgb(87,97,106);
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+}
+
+#submitfriendbutton{
+  margin: 1px;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 0 0 3px #3d3737, 0 0 5px #35353f;
+  box-shadow: 2px 2px 5px grey;
+  font-size:17px;
+}
+
+#add_friend_input_name{
+  border-radius:5px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#add_friend_input_email{
+  border-radius:5px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#img_one{
+  box-shadow: 7px 7px 5px grey;
+  border-radius:2px;
+  border: 1px solid black;
+}
+
+#img_two{
+  box-shadow: 7px 7px 5px grey;
+  border-radius:2px;
+  border: 1px solid black;
+}
+
+#img_three{
+  box-shadow: 7px 7px 5px grey;
+  border-radius:2px;
+  border: 1px solid black;
+}
+
+#img_four{
+  box-shadow: 7px 7px 5px grey;
+  border-radius:2px;
+  border: 1px solid black;
+}
+
+#welcome_box{
+  box-shadow: 7px 7px 5px grey;
+  border-radius:2px;
+  border: 2px solid black;
+}
+
+#upload_form{
+  font-family: 'Tajawal', sans-serif;
+  font-size:20px;
+  font-weight: 550;
+}
+
+#upload_images_desc{
+  font-family: 'Tajawal', sans-serif;
+  font-size:35px;
+  font-weight: 550;
+}
+
+#image_desc{
+  font-family: 'Tajawal', sans-serif;
+  font-size:25px;
+}
+
+#add_delete_update{
+  margin: auto;
+  width: 50%;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

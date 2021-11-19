@@ -1,0 +1,29 @@
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>map test</title>
+        <style>
+            #map{
+                height:500px;
+                width:100%;
+            }
+        </style>
+    </head>
+    <!-- Had to add use my own API for places library for goole maps -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6BLpv04Rj-d5e9iXU_Pj2kidttft3yR0&callback=initMap"></script> -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZyNRrH2z2PN_r8MymD8qzXS1DfNDEhww&callback=initMap&libraries=places&v=weekly"></script>
+    <script src="script.js"></script>
+    <body>
+    <h1>CMPT 470 Project</h1>
+    <div id="map"></div>
+    <input onclick="deleteMarkers();" type="button" value="Delete Markers" />
+    <div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">Search</div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a location" />
+      </div>
+    </div>
+  </body>
+</html>
